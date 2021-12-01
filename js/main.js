@@ -94,7 +94,7 @@ function createSkybox(scene){
 }
 
 function createShip(scene){
-    BABYLON.SceneLoader.ImportMesh('', 'assets/models/', 'spaceCraft1.obj', scene, (meshes) =>{
+    BABYLON.SceneLoader.ImportMesh('', '../assets/models/', 'spaceCraft1.obj', scene, (meshes) =>{
         console.log(meshes);
         meshes.forEach((mesh) =>{
             mesh.position = new BABYLON.Vector3(0,-5,10);
